@@ -33,6 +33,31 @@ namespace LuKaSo.Sort.Sorters
         /// <param name="end"></param>
         private void Sort(T[] array, uint start, uint end)
         {
+            SortBackward(array, start, end);
+
+            if (start == end)
+            {
+                return;
+            }
+
+            SortForward(array, start, end);
+
+            if (start == end)
+            {
+                return;
+            }
+
+            Sort(array, start, end);
+        }
+
+        /// <summary>
+        /// Backward sort
+        /// </summary>
+        /// <param name="array"></param>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        private void SortBackward(T[] array, uint start, uint end)
+        {
             for (uint i = start; i < end; i++)
             {
                 if (array[i].CompareTo(array[i + 1]) > 0)
@@ -42,12 +67,16 @@ namespace LuKaSo.Sort.Sorters
             }
 
             end--;
+        }
 
-            if (start == end)
-            {
-                return;
-            }
-
+        /// <summary>
+        /// Forward sort
+        /// </summary>
+        /// <param name="array"></param>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        private void SortForward(T[] array, uint start, uint end)
+        {
             for (uint i = end; i > start; i--)
             {
                 if (array[i].CompareTo(array[i - 1]) < 0)
@@ -57,13 +86,6 @@ namespace LuKaSo.Sort.Sorters
             }
 
             start++;
-
-            if (start == end)
-            {
-                return;
-            }
-
-            Sort(array, start, end);
         }
     }
 }
