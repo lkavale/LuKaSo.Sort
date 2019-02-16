@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuKaSo.Sort", "LuKaSo.Sort\LuKaSo.Sort.csproj", "{DD8C58A7-C832-47D5-B91B-AD516E0C5245}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuKaSo.Sort.Test", "LuKaSo.Sort.Test\LuKaSo.Sort.Test.csproj", "{AF712EBD-2564-4CD2-83B3-4363E8F6C2ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD8C58A7-C832-47D5-B91B-AD516E0C5245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD8C58A7-C832-47D5-B91B-AD516E0C5245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD8C58A7-C832-47D5-B91B-AD516E0C5245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD8C58A7-C832-47D5-B91B-AD516E0C5245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF712EBD-2564-4CD2-83B3-4363E8F6C2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF712EBD-2564-4CD2-83B3-4363E8F6C2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF712EBD-2564-4CD2-83B3-4363E8F6C2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF712EBD-2564-4CD2-83B3-4363E8F6C2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {725FF2C3-45FE-417A-A3A4-3F8B671C7047}
+	EndGlobalSection
+EndGlobal
